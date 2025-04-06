@@ -1,0 +1,294 @@
+|-- .dockerignore
+|-- .gitattributes
+|-- .github
+    |-- dependabot.yml
+    |-- workflows
+        |-- ci.yml
+        |-- deploy.yml
+|-- .gitignore
+|-- .kamal
+    |-- hooks
+        |-- docker-setup.sample
+        |-- post-deploy.sample
+        |-- post-proxy-reboot.sample
+        |-- pre-build.sample
+        |-- pre-connect.sample
+        |-- pre-deploy.sample
+        |-- pre-proxy-reboot.sample
+    |-- secrets
+|-- .prettierignore
+|-- .prettierrc
+|-- .rspec
+|-- .rubocop.yml
+|-- .ruby-lsp
+    |-- .gitignore
+    |-- Gemfile
+    |-- Gemfile.lock
+    |-- main_lockfile_hash
+|-- .ruby-version
+|-- 2
+|-- app
+    |-- controllers
+        |-- application_controller.rb
+        |-- concerns
+            |-- .keep
+        |-- dashboard_controller.rb
+        |-- home_controller.rb
+        |-- identity
+            |-- email_verifications_controller.rb
+            |-- password_resets_controller.rb
+        |-- inertia_controller.rb
+        |-- inertia_rails
+            |-- static_controller.rb
+        |-- sessions_controller.rb
+        |-- settings
+            |-- emails_controller.rb
+            |-- passwords_controller.rb
+            |-- profiles_controller.rb
+            |-- sessions_controller.rb
+        |-- users_controller.rb
+    |-- frontend
+        |-- components
+            |-- app-content.tsx
+            |-- app-header.tsx
+            |-- app-logo-icon.tsx
+            |-- app-logo.tsx
+            |-- app-shell.tsx
+            |-- app-sidebar-header.tsx
+            |-- app-sidebar.tsx
+            |-- appearance-dropdown.tsx
+            |-- appearance-tabs.tsx
+            |-- breadcrumbs.tsx
+            |-- delete-user.tsx
+            |-- form.tsx
+            |-- heading-small.tsx
+            |-- heading.tsx
+            |-- icon.tsx
+            |-- input-error.tsx
+            |-- nav-footer.tsx
+            |-- nav-main.tsx
+            |-- nav-user.tsx
+            |-- placeholder-pattern.tsx
+            |-- text-link.tsx
+            |-- ui
+                |-- avatar.tsx
+                |-- badge.tsx
+                |-- breadcrumb.tsx
+                |-- button.tsx
+                |-- card.tsx
+                |-- checkbox.tsx
+                |-- collapsible.tsx
+                |-- dialog.tsx
+                |-- dropdown-menu.tsx
+                |-- input.tsx
+                |-- label.tsx
+                |-- navigation-menu.tsx
+                |-- select.tsx
+                |-- separator.tsx
+                |-- sheet.tsx
+                |-- sidebar.tsx
+                |-- skeleton.tsx
+                |-- sonner.tsx
+                |-- toggle-group.tsx
+                |-- toggle.tsx
+                |-- tooltip.tsx
+            |-- user-info.tsx
+            |-- user-menu-content.tsx
+        |-- entrypoints
+            |-- application.css
+            |-- inertia.ts
+        |-- hooks
+            |-- use-appearance.tsx
+            |-- use-flash.tsx
+            |-- use-initials.tsx
+            |-- use-mobile-navigation.ts
+            |-- use-mobile.ts
+        |-- layouts
+            |-- app
+                |-- app-header-layout.tsx
+                |-- app-sidebar-layout.tsx
+            |-- app-layout.tsx
+            |-- auth
+                |-- auth-card-layout.tsx
+                |-- auth-simple-layout.tsx
+                |-- auth-split-layout.tsx
+            |-- auth-layout.tsx
+            |-- persistent-layout.tsx
+            |-- settings
+                |-- layout.tsx
+        |-- lib
+            |-- utils.ts
+        |-- pages
+            |-- dashboard
+                |-- index.tsx
+            |-- home
+                |-- index.tsx
+            |-- identity
+                |-- password_resets
+                    |-- edit.tsx
+                    |-- new.tsx
+            |-- sessions
+                |-- new.tsx
+            |-- settings
+                |-- appearance.tsx
+                |-- emails
+                    |-- show.tsx
+                |-- passwords
+                    |-- show.tsx
+                |-- profiles
+                    |-- show.tsx
+                |-- sessions
+                    |-- index.tsx
+            |-- users
+                |-- new.tsx
+        |-- routes
+            |-- index.d.ts
+            |-- index.js
+        |-- ssr
+            |-- ssr.ts
+        |-- types
+            |-- index.ts
+            |-- vite-env.d.ts
+    |-- helpers
+        |-- application_helper.rb
+    |-- jobs
+        |-- application_job.rb
+    |-- mailers
+        |-- application_mailer.rb
+        |-- user_mailer.rb
+    |-- models
+        |-- application_record.rb
+        |-- concerns
+            |-- .keep
+        |-- current.rb
+        |-- session.rb
+        |-- user.rb
+    |-- views
+        |-- layouts
+            |-- application.html.erb
+            |-- mailer.html.erb
+            |-- mailer.text.erb
+        |-- pwa
+            |-- manifest.json.erb
+            |-- service-worker.js
+        |-- sessions
+            |-- index.html.erb
+        |-- user_mailer
+            |-- email_verification.html.erb
+            |-- password_reset.html.erb
+|-- bin
+    |-- brakeman
+    |-- bundle
+    |-- dev
+    |-- docker-entrypoint
+    |-- jobs
+    |-- kamal
+    |-- rails
+    |-- rake
+    |-- rspec
+    |-- rubocop
+    |-- setup
+    |-- thrust
+    |-- vite
+|-- components.json
+|-- config
+    |-- application.rb
+    |-- boot.rb
+    |-- cable.yml
+    |-- cache.yml
+    |-- credentials.yml.enc
+    |-- database.yml
+    |-- deploy.yml
+    |-- environment.rb
+    |-- environments
+        |-- development.rb
+        |-- production.rb
+        |-- test.rb
+    |-- initializers
+        |-- assets.rb
+        |-- content_security_policy.rb
+        |-- filter_parameter_logging.rb
+        |-- inertia_rails.rb
+        |-- inflections.rb
+        |-- js_routes.rb
+        |-- wrap_parameters.rb
+    |-- locales
+        |-- en.yml
+    |-- puma.rb
+    |-- queue.yml
+    |-- recurring.yml
+    |-- routes.rb
+    |-- storage.yml
+    |-- vite.json
+|-- config.ru
+|-- db
+    |-- cable_schema.rb
+    |-- cache_schema.rb
+    |-- migrate
+        |-- 20250211160810_create_users.rb
+        |-- 20250211160811_create_sessions.rb
+    |-- queue_schema.rb
+    |-- schema.rb
+    |-- seeds.rb
+|-- Dockerfile
+|-- Dockerfile-ssr
+|-- eslint.config.js
+|-- Gemfile
+|-- Gemfile.lock
+|-- lib
+    |-- tasks
+        |-- .keep
+|-- log
+    |-- .keep
+    |-- development.log
+|-- package-lock.json
+|-- package.json
+|-- Procfile.dev
+|-- public
+    |-- 400.html
+    |-- 404.html
+    |-- 406-unsupported-browser.html
+    |-- 422.html
+    |-- 500.html
+    |-- icon.png
+    |-- icon.svg
+    |-- robots.txt
+    |-- vite-dev
+        |-- .vite
+            |-- manifest-assets.json
+            |-- manifest.json
+        |-- assets
+            |-- application-8-hdwvDJ.css
+            |-- inertia-BNn9K3ho.js
+|-- Rakefile
+|-- README.md
+|-- script
+    |-- .keep
+|-- spec
+    |-- factories
+        |-- users.rb
+    |-- mailers
+        |-- user_mailer_spec.rb
+    |-- rails_helper.rb
+    |-- requests
+        |-- identity
+            |-- email_verifications_spec.rb
+            |-- password_resets_spec.rb
+        |-- sessions_spec.rb
+        |-- settings
+            |-- emails_spec.rb
+            |-- passwords_spec.rb
+            |-- sessions_spec.rb
+        |-- users_spec.rb
+    |-- spec_helper.rb
+    |-- support
+        |-- authentication_helpers.rb
+|-- storage
+    |-- .keep
+    |-- development.sqlite3
+|-- tsconfig.app.json
+|-- tsconfig.json
+|-- tsconfig.node.json
+|-- vendor
+    |-- .keep
+|-- vite.config.ts
