@@ -5,6 +5,7 @@ class User < ApplicationRecord
   # Define roles using an enum
   # :member is the default (index 0)
   enum :role, {member: 0, admin: 1} # <--- Corrected syntax
+  attribute :role, :integer # <--- Add this
 
   has_secure_password
 

@@ -24,6 +24,7 @@
     |-- .gitignore
     |-- Gemfile
     |-- Gemfile.lock
+    |-- last_updated
     |-- main_lockfile_hash
 |-- .ruby-version
 |-- 2
@@ -254,6 +255,7 @@
     |-- migrate
         |-- 20250211160810_create_users.rb
         |-- 20250211160811_create_sessions.rb
+        |-- 20250410071952_add_role_to_users.rb
     |-- queue_schema.rb
     |-- schema.rb
     |-- seeds.rb

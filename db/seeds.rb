@@ -6,7 +6,7 @@ admin_password = "1234" # Change this!
 
 unless User.exists?(email: admin_email)
   User.create!(
-    name: "Admin User",
+    name: "imran",
     email: admin_email,
     password: admin_password,
     password_confirmation: admin_password,
