@@ -3,9 +3,15 @@
 class InertiaController < ApplicationController
   inertia_config default_render: true
   inertia_share flash: -> { flash.to_hash },
-      auth: {
-        user: -> { Current.user.as_json(only: %i[id name email verified created_at updated_at]) },
-        session: -> { Current.session.as_json(only: %i[id]) }
+      auth: -> {
+        if Current.user
+          {
+            user: Current.user.as_json(only: %i[id name email verified role created_at updated_at]), # Add :role
+            session: Current.session&.as_json(only: %i[id]) # Use safe navigation for session
+          }
+        else
+          {user: nil, session: nil} # Ensure auth object exists even when logged out
+        end
       }
 
   private

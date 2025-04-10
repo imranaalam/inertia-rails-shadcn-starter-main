@@ -152,6 +152,7 @@
                 |-- password_resets
                     |-- edit.tsx
                     |-- new.tsx
+            |-- notifications
             |-- sessions
                 |-- new.tsx
             |-- settings
@@ -182,6 +183,7 @@
         |-- application_mailer.rb
         |-- user_mailer.rb
     |-- models
+        |-- ability.rb
         |-- application_record.rb
         |-- concerns
             |-- .keep
@@ -263,6 +265,7 @@
 |-- lib
     |-- tasks
         |-- .keep
+    |-- templates
 |-- log
     |-- .keep
     |-- development.log
@@ -283,8 +286,8 @@
             |-- manifest-assets.json
             |-- manifest.json
         |-- assets
-            |-- application-8-hdwvDJ.css
-            |-- inertia-BNn9K3ho.js
+            |-- application-WN5n9Bn7.css
+            |-- inertia-DwlBtkrC.js
 |-- Rakefile
 |-- README.md
 |-- script
@@ -311,6 +314,8 @@
 |-- storage
     |-- .keep
     |-- development.sqlite3
+    |-- development.sqlite3-shm
+    |-- development.sqlite3-wal
 |-- tsconfig.app.json
 |-- tsconfig.json
 |-- tsconfig.node.json

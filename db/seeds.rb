@@ -1,11 +1,22 @@
-# frozen_string_literal: true
+# db/seeds.rb
 
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+# Create an admin user
+admin_email = "imranaalam@gmail.com"
+admin_password = "1234" # Change this!
+
+unless User.exists?(email: admin_email)
+  User.create!(
+    name: "Admin User",
+    email: admin_email,
+    password: admin_password,
+    password_confirmation: admin_password,
+    role: :admin, # Assign the admin role
+    verified: true # Optional: Mark as verified immediately
+  )
+  puts "Admin user created: #{admin_email}"
+else
+  puts "Admin user already exists: #{admin_email}"
+end
+
+# You can add member users too if needed
+# ...

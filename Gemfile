@@ -46,6 +46,11 @@ gem "inertia_rails", "~> 3.6"
 # we leave gem here to watch for security updates
 gem "authentication-zero"
 
+# Gemfile
+# ... other gems
+gem "cancancan"
+# ...
+#
 # Brings Rails named routes to javascript
 gem "js-routes"
 
