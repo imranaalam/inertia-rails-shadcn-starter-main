@@ -49,3 +49,8 @@
 # Ignore Docker-related files
 /.dockerignore
 /Dockerfile*
+
+.env*
+.flaskenv*
+!.env.project
+!.env.vault

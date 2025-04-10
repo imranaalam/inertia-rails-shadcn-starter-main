@@ -1,4 +1,5 @@
 |-- .dockerignore
+|-- .env.vault
 |-- .gitattributes
 |-- .github
     |-- dependabot.yml
@@ -316,8 +317,6 @@
 |-- storage
     |-- .keep
     |-- development.sqlite3
-    |-- development.sqlite3-shm
-    |-- development.sqlite3-wal
 |-- tsconfig.app.json
 |-- tsconfig.json
 |-- tsconfig.node.json
